@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-secondary-light: var(--secondary-light);
+  
+  --color-accent: var(--accent);
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+}
+
+:root {
+  /* Exact Ayoni Clinic Color Theme */
+  --primary: #c07f62; /* Muted Terracotta/Pinkish-Brown */
+  --primary-dark: #a86c52;
+  --primary-light: #f5ece9;
+  
+  --secondary: #264331; /* Dark Forest Green for headings/accents */
+  --secondary-dark: #1e3627;
+  --secondary-light: #365e45;
+  
+  --accent: #d67145; /* Brighter Terracotta */
+  
+  --background: #faf9f7; /* Off-white/Beige background */
+  --foreground: #111111; /* Dark text */
+  --card: #ffffff;
+  --card-foreground: #111111;
+  --muted: #f9f3f3;
+  --muted-foreground: #475569;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #d67145;
+    --primary-dark: #c07f62;
+    --primary-light: #472b21;
+    
+    --secondary: #f0f5fa;
+    --secondary-dark: #faf9f7;
+    --secondary-light: #eceff3;
+    
+    --accent: #a484bc; /* Muted purple found in their theme */
+    
+    --background: #111111;
+    --foreground: #faf9f7;
+    --card: #1e293b;
+    --card-foreground: #faf9f7;
+    --muted: #334155;
+    --muted-foreground: #9ca3af;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  @apply transition-colors duration-300;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
