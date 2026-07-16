@@ -7,6 +7,13 @@ export const metadata = {
 };
 
 export default function GalleryPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Gallery | Dr. Huma Ali",
+    "description": "A Glimpse into Dr. Huma Ali's Practice and Sir Ganga Ram Hospital."
+  };
+
   const categories = [
     {
       id: "portraits",
@@ -52,6 +59,10 @@ export default function GalleryPage() {
 
   return (
     <div className="py-20 bg-[var(--color-background)] min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Page Header */}

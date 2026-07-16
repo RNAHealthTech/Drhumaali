@@ -8,6 +8,23 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Gynaecology & Obstetrics Services | Dr. Huma Ali",
+    "description": "Comprehensive Gynaecology & Obstetrics Services at Sir Ganga Ram Hospital.",
+    "about": [
+      {
+        "@type": "MedicalSpecialty",
+        "name": "Obstetrics"
+      },
+      {
+        "@type": "MedicalSpecialty",
+        "name": "Gynaecology"
+      }
+    ]
+  };
+
   const obstetricsServices = [
     {
       title: "Prenatal Care & Counselling",
@@ -96,6 +113,10 @@ export default function ServicesPage() {
 
   return (
     <div className="py-20 bg-[var(--color-muted)]/30 min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Page Header */}

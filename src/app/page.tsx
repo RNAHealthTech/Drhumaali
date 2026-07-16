@@ -4,8 +4,34 @@ import AnimateIn from "@/components/AnimateIn";
 import { CalendarCheck, ChevronRight, Award, Stethoscope, Clock, ShieldCheck, HeartPulse, UserCheck, PhoneCall, Quote, Plus, FileText, CheckCircle2, Hospital } from "lucide-react";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Huma Ali",
+    "image": "https://sgrh.com/assets/img/profile/gab2780.png",
+    "description": "Expert Obstetrician & Gynaecologist at Sir Ganga Ram Hospital (SGRH), New Delhi.",
+    "telephone": "+91-1142254000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sir Ganga Ram Hospital, Sir Ganga Ram Hospital Marg, Rajinder Nagar",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110060",
+      "addressCountry": "IN"
+    },
+    "medicalSpecialty": "Gynaecology, Obstetrics",
+    "hospitalAffiliation": {
+      "@type": "Hospital",
+      "name": "Sir Ganga Ram Hospital"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[var(--color-background)] pt-12 pb-24 md:pt-32 md:pb-40">

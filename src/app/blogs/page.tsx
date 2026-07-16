@@ -9,6 +9,13 @@ export const metadata = {
 };
 
 export default function BlogsPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Health Insights & Blogs | Dr. Huma Ali",
+    "description": "Empowering you through knowledge on women's health, gynaecology, obstetrics, and overall well-being."
+  };
+
   const gynaecologyBlogs = blogs.filter(b => b.category === "Gynaecology");
   const obstetricsBlogs = blogs.filter(b => b.category === "Obstetrics");
   const generalBlogs = blogs.filter(b => b.category === "General Women's Health");
@@ -33,6 +40,10 @@ export default function BlogsPage() {
 
   return (
     <div className="py-20 bg-[var(--color-muted)]/30 min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Page Header */}

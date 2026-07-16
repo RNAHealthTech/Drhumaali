@@ -8,8 +8,33 @@ export const metadata = {
 };
 
 export default function ContactPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Dr. Huma Ali",
+    "description": "Contact information, OPD timings, and emergency details for Dr. Huma Ali.",
+    "mainEntity": {
+      "@type": "Physician",
+      "name": "Dr. Huma Ali",
+      "telephone": "+91-1142254000",
+      "email": "info@drhumaali.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sir Ganga Ram Hospital, Sir Ganga Ram Hospital Marg, Rajinder Nagar",
+        "addressLocality": "New Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110060",
+        "addressCountry": "IN"
+      }
+    }
+  };
+
   return (
     <div className="py-20 bg-gradient-to-b from-[var(--color-primary-light)]/40 to-[var(--color-background)] min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Page Header */}
