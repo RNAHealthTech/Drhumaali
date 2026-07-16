@@ -47,7 +47,7 @@ export default function Home() {
             {/* Text Content */}
             <div className="w-full md:w-1/2 space-y-8 order-2 md:order-1 relative z-20">
               <AnimateIn direction="up" delay={0.1}>
-                <div className="inline-flex items-center gap-2.5 bg-white/60 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-semibold text-[var(--color-secondary)] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/50">
+                <div className="inline-flex items-center gap-2.5 bg-white/60 dark:bg-[var(--color-card)]/60 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-semibold text-[var(--color-secondary)] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/50">
                   <Stethoscope size={16} className="text-[var(--color-primary)]" />
                   <span className="tracking-wide uppercase text-xs font-bold">Expert Obstetrics & Gynaecology</span>
                 </div>
@@ -77,7 +77,7 @@ export default function Home() {
                   href="tel:+911142254000"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent text-[var(--color-secondary)] hover:text-[var(--color-primary)] px-6 py-4 rounded-full font-semibold transition-all group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:shadow-md transition-all group-hover:scale-110">
+                  <div className="w-10 h-10 rounded-full bg-white dark:bg-[var(--color-card)] flex items-center justify-center shadow-sm group-hover:shadow-md transition-all group-hover:scale-110">
                     <PhoneCall size={18} />
                   </div>
                   Call Clinic
@@ -94,14 +94,14 @@ export default function Home() {
                   <img
                     src="https://sgrh.com/assets/img/profile/gab2780.png"
                     alt="Dr. Huma Ali"
-                    className="absolute inset-0 w-full h-full object-cover object-top hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] bg-gray-100"
+                    className="absolute inset-0 w-full h-full object-cover object-top hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] bg-gray-100 dark:bg-slate-800"
                   />
                   {/* Premium gradient overlay at bottom */}
                   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent z-10 pointer-events-none"></div>
                 </div>
                 
                 {/* Floating Glass Badge */}
-                <AnimateIn direction="up" delay={0.6} className="absolute -bottom-6 -left-6 md:-left-12 bg-white/80 backdrop-blur-xl p-5 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-white flex items-center gap-4 z-30">
+                <AnimateIn direction="up" delay={0.6} className="absolute -bottom-6 -left-6 md:-left-12 bg-white/80 dark:bg-[var(--color-card)]/80 backdrop-blur-xl p-5 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-white flex items-center gap-4 z-30">
                   <div className="w-12 h-12 rounded-full bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)]">
                     <Award size={24} />
                   </div>
@@ -119,8 +119,8 @@ export default function Home() {
       {/* Floating Stats Section */}
       <section className="relative z-30 -mt-16 md:-mt-20 mx-4 md:mx-auto md:w-[85%] max-w-6xl">
         <AnimateIn direction="up" delay={0.4}>
-          <div className="bg-white/70 backdrop-blur-2xl rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-white p-2">
-            <div className="bg-white rounded-2xl p-8 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+          <div className="bg-white/70 dark:bg-[var(--color-card)]/70 backdrop-blur-2xl rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-white p-2">
+            <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl p-8 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-100">
               <div className="text-center px-4">
                 <div className="text-4xl md:text-5xl font-light text-[var(--color-secondary)] mb-2 tracking-tight">15<span className="text-[var(--color-primary)]">+</span></div>
                 <div className="text-[var(--color-muted-foreground)] font-semibold text-sm uppercase tracking-wider mb-1">Years Experience</div>
@@ -170,7 +170,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {/* Service 1 */}
             <AnimateIn direction="up" delay={0.1}>
-              <div className="bg-white p-10 rounded-[2rem] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-100 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 group hover:-translate-y-2 h-full flex flex-col">
+              <div className="bg-white dark:bg-[var(--color-card)] p-10 rounded-[2rem] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-100 dark:border-slate-800 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 group hover:-translate-y-2 h-full flex flex-col">
                 <div className="w-16 h-16 bg-[var(--color-primary-light)] rounded-2xl flex items-center justify-center text-[var(--color-primary)] mb-8 group-hover:scale-110 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all duration-500">
                   <HeartPulse size={32} strokeWidth={1.5} />
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
 
             {/* Service 2 */}
             <AnimateIn direction="up" delay={0.2}>
-              <div className="bg-white p-10 rounded-[2rem] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-100 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 group hover:-translate-y-2 h-full flex flex-col">
+              <div className="bg-white dark:bg-[var(--color-card)] p-10 rounded-[2rem] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-100 dark:border-slate-800 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 group hover:-translate-y-2 h-full flex flex-col">
                 <div className="w-16 h-16 bg-[var(--color-primary-light)] rounded-2xl flex items-center justify-center text-[var(--color-primary)] mb-8 group-hover:scale-110 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all duration-500">
                   <Stethoscope size={32} strokeWidth={1.5} />
                 </div>
@@ -206,7 +206,7 @@ export default function Home() {
 
             {/* Service 3 */}
             <AnimateIn direction="up" delay={0.3}>
-              <div className="bg-white p-10 rounded-[2rem] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-100 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 group hover:-translate-y-2 h-full flex flex-col">
+              <div className="bg-white dark:bg-[var(--color-card)] p-10 rounded-[2rem] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-100 dark:border-slate-800 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 group hover:-translate-y-2 h-full flex flex-col">
                 <div className="w-16 h-16 bg-[var(--color-primary-light)] rounded-2xl flex items-center justify-center text-[var(--color-primary)] mb-8 group-hover:scale-110 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all duration-500">
                   <UserCheck size={32} strokeWidth={1.5} />
                 </div>
@@ -226,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+      <section className="py-24 md:py-32 bg-white dark:bg-[var(--color-card)] relative overflow-hidden">
         {/* Subtle background decoration */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[var(--color-primary-light)]/30 to-transparent pointer-events-none"></div>
         
@@ -339,7 +339,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {[1, 2, 3].map((item, index) => (
               <AnimateIn key={item} direction="up" delay={index * 0.15} className={index === 1 ? "lg:mt-10" : ""}>
-                <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] border border-white relative h-full flex flex-col group hover:-translate-y-2 transition-transform duration-500">
+                <div className="bg-white dark:bg-[var(--color-card)] p-8 md:p-10 rounded-[2rem] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] border border-white relative h-full flex flex-col group hover:-translate-y-2 transition-transform duration-500">
                   <div className="w-12 h-12 bg-[var(--color-primary-light)] rounded-full flex items-center justify-center text-[var(--color-primary)] mb-6">
                     <Quote size={20} className="fill-current" />
                   </div>
@@ -352,7 +352,7 @@ export default function Home() {
                     "The visit with the doctor was quite satisfactory. Her friendly and warm approach puts you at comfort. She gives adequate time to the client and does not rush the appointment. I would highly recommend Dr. Huma Ali."
                   </p>
                   <div className="flex items-center gap-4 mt-auto">
-                    <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold">
+                    <div className="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-500 dark:text-gray-400 font-bold">
                       HP
                     </div>
                     <div>
@@ -368,7 +368,7 @@ export default function Home() {
       </section>
       
       {/* Insurance & Affiliations Banner */}
-      <section className="py-12 bg-white border-y border-gray-100">
+      <section className="py-12 bg-white dark:bg-[var(--color-card)] border-y border-gray-100 dark:border-slate-800">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto gap-8">
             <div className="flex items-center gap-4">
@@ -376,8 +376,8 @@ export default function Home() {
                 <Hospital size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 text-lg">Hospital Affiliation</h3>
-                <p className="text-gray-600">Sir Ganga Ram Hospital, New Delhi</p>
+                <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Hospital Affiliation</h3>
+                <p className="text-gray-600 dark:text-gray-400">Sir Ganga Ram Hospital, New Delhi</p>
               </div>
             </div>
             <div className="hidden md:block w-px h-12 bg-gray-200"></div>
@@ -386,8 +386,8 @@ export default function Home() {
                 <CheckCircle2 size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 text-lg">Trusted & Certified</h3>
-                <p className="text-gray-600">Highest Standards of Medical Care</p>
+                <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Trusted & Certified</h3>
+                <p className="text-gray-600 dark:text-gray-400">Highest Standards of Medical Care</p>
               </div>
             </div>
             <div className="hidden md:block w-px h-12 bg-gray-200"></div>
@@ -396,8 +396,8 @@ export default function Home() {
                 <ShieldCheck size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 text-lg">Comprehensive Insurance</h3>
-                <p className="text-gray-600">Major health insurances accepted</p>
+                <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Comprehensive Insurance</h3>
+                <p className="text-gray-600 dark:text-gray-400">Major health insurances accepted</p>
               </div>
             </div>
           </div>
@@ -405,26 +405,26 @@ export default function Home() {
       </section>
 
       {/* Health Tips / Insights Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-50 dark:bg-slate-900/50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-sm font-bold text-[var(--color-primary)] uppercase tracking-wider mb-2">Health Insights</h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Expert Advice & Wellness Tips</h3>
-            <p className="text-gray-600 text-lg">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">Expert Advice & Wellness Tips</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-lg">
               Empowering women with the right knowledge for a healthier lifestyle and proactive care.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Tip 1 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+            <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-slate-800 group">
               <div className="h-48 overflow-hidden relative">
                 <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=800&auto=format&fit=crop" alt="Healthy Lifestyle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)]">Wellness</div>
+                <div className="absolute top-4 left-4 bg-white/90 dark:bg-[var(--color-card)]/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)]">Wellness</div>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[var(--color-primary)] transition-colors">5 Important Tests Every Woman Should Take</h4>
-                <p className="text-gray-600 mb-4 line-clamp-2">Regular screening is the key to prevention. Learn about the essential health checkups recommended for women in different age groups.</p>
+                <h4 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3 group-hover:text-[var(--color-primary)] transition-colors">5 Important Tests Every Woman Should Take</h4>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Regular screening is the key to prevention. Learn about the essential health checkups recommended for women in different age groups.</p>
                 <div className="flex items-center text-sm font-bold text-[var(--color-primary)] group-hover:gap-2 transition-all gap-1 cursor-pointer">
                   Read Article <ChevronRight size={16} />
                 </div>
@@ -432,14 +432,14 @@ export default function Home() {
             </div>
 
             {/* Tip 2 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+            <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-slate-800 group">
               <div className="h-48 overflow-hidden relative">
                 <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?q=80&w=800&auto=format&fit=crop" alt="Pregnancy Nutrition" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)]">Maternity</div>
+                <div className="absolute top-4 left-4 bg-white/90 dark:bg-[var(--color-card)]/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)]">Maternity</div>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[var(--color-primary)] transition-colors">Nutrition Guide for a Healthy Pregnancy</h4>
-                <p className="text-gray-600 mb-4 line-clamp-2">A balanced diet plays a crucial role in maternal and fetal health. Discover the essential nutrients needed during your pregnancy journey.</p>
+                <h4 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3 group-hover:text-[var(--color-primary)] transition-colors">Nutrition Guide for a Healthy Pregnancy</h4>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">A balanced diet plays a crucial role in maternal and fetal health. Discover the essential nutrients needed during your pregnancy journey.</p>
                 <div className="flex items-center text-sm font-bold text-[var(--color-primary)] group-hover:gap-2 transition-all gap-1 cursor-pointer">
                   Read Article <ChevronRight size={16} />
                 </div>
@@ -447,14 +447,14 @@ export default function Home() {
             </div>
 
             {/* Tip 3 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+            <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-slate-800 group">
               <div className="h-48 overflow-hidden relative">
                 <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop" alt="Yoga and PCOD" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)]">Lifestyle</div>
+                <div className="absolute top-4 left-4 bg-white/90 dark:bg-[var(--color-card)]/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)]">Lifestyle</div>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[var(--color-primary)] transition-colors">Managing PCOD: Lifestyle & Diet Changes</h4>
-                <p className="text-gray-600 mb-4 line-clamp-2">PCOD is a common hormonal disorder, but with the right lifestyle modifications, it can be managed effectively without extreme measures.</p>
+                <h4 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3 group-hover:text-[var(--color-primary)] transition-colors">Managing PCOD: Lifestyle & Diet Changes</h4>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">PCOD is a common hormonal disorder, but with the right lifestyle modifications, it can be managed effectively without extreme measures.</p>
                 <div className="flex items-center text-sm font-bold text-[var(--color-primary)] group-hover:gap-2 transition-all gap-1 cursor-pointer">
                   Read Article <ChevronRight size={16} />
                 </div>
@@ -465,62 +465,62 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-[var(--color-card)]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-gray-600 text-lg">Common questions our patients ask before their visit.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Frequently Asked Questions</h2>
+            <p className="text-gray-600 dark:text-gray-400 text-lg">Common questions our patients ask before their visit.</p>
           </div>
           
           <div className="max-w-3xl mx-auto space-y-4">
-            <details className="group bg-gray-50 p-6 rounded-2xl cursor-pointer">
-              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 list-none">
+            <details className="group bg-gray-50 dark:bg-slate-900/50 p-6 rounded-2xl cursor-pointer">
+              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 dark:text-gray-100 list-none">
                 When should a woman first visit a gynecologist?
                 <span className="transition group-open:rotate-180">
                   <Plus className="group-open:hidden" />
                   <div className="hidden group-open:block w-6 h-0.5 bg-current"></div>
                 </span>
               </summary>
-              <p className="text-gray-600 mt-4 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
                 It is generally recommended that girls have their first gynecological visit between the ages of 13 and 15. This first visit is usually just a conversation to establish a relationship and discuss general health, menstruation, and any concerns.
               </p>
             </details>
             
-            <details className="group bg-gray-50 p-6 rounded-2xl cursor-pointer">
-              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 list-none">
+            <details className="group bg-gray-50 dark:bg-slate-900/50 p-6 rounded-2xl cursor-pointer">
+              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 dark:text-gray-100 list-none">
                 Do you handle high-risk pregnancies?
                 <span className="transition group-open:rotate-180">
                   <Plus className="group-open:hidden" />
                   <div className="hidden group-open:block w-6 h-0.5 bg-current"></div>
                 </span>
               </summary>
-              <p className="text-gray-600 mt-4 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
                 Yes, Dr. Huma Ali has extensive experience in managing high-risk pregnancies. This includes conditions like gestational diabetes, hypertension, advanced maternal age, and multiple pregnancies, ensuring careful monitoring for both mother and baby.
               </p>
             </details>
             
-            <details className="group bg-gray-50 p-6 rounded-2xl cursor-pointer">
-              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 list-none">
+            <details className="group bg-gray-50 dark:bg-slate-900/50 p-6 rounded-2xl cursor-pointer">
+              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 dark:text-gray-100 list-none">
                 What are the signs that I might have PCOS?
                 <span className="transition group-open:rotate-180">
                   <Plus className="group-open:hidden" />
                   <div className="hidden group-open:block w-6 h-0.5 bg-current"></div>
                 </span>
               </summary>
-              <p className="text-gray-600 mt-4 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
                 Common signs of Polycystic Ovary Syndrome (PCOS) include irregular or missed periods, excessive hair growth, acne, weight gain, and difficulty getting pregnant. If you experience these symptoms, it's advisable to consult for a proper diagnosis and management plan.
               </p>
             </details>
             
-            <details className="group bg-gray-50 p-6 rounded-2xl cursor-pointer">
-              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 list-none">
+            <details className="group bg-gray-50 dark:bg-slate-900/50 p-6 rounded-2xl cursor-pointer">
+              <summary className="flex justify-between items-center font-bold text-lg text-gray-900 dark:text-gray-100 list-none">
                 How frequently should I get a Pap smear?
                 <span className="transition group-open:rotate-180">
                   <Plus className="group-open:hidden" />
                   <div className="hidden group-open:block w-6 h-0.5 bg-current"></div>
                 </span>
               </summary>
-              <p className="text-gray-600 mt-4 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
                 General guidelines suggest women start getting Pap smears at age 21, repeating every 3 years if results are normal. Women aged 30-65 might combine it with an HPV test every 5 years. However, Dr. Huma Ali will recommend a schedule tailored specifically to your personal health history.
               </p>
             </details>
@@ -538,7 +538,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-[var(--color-primary-dark)] hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition-all shadow-xl hover:-translate-y-1 text-lg"
+            className="inline-flex items-center gap-2 bg-white dark:bg-[var(--color-card)] text-[var(--color-primary-dark)] hover:bg-gray-100 dark:bg-slate-800 px-8 py-4 rounded-full font-bold transition-all shadow-xl hover:-translate-y-1 text-lg"
           >
             <CalendarCheck size={20} />
             Book a Consultation

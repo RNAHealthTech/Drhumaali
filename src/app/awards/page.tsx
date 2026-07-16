@@ -65,28 +65,28 @@ export default function AwardsPage() {
             
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="bg-[var(--color-card)] p-6 rounded-2xl shadow-sm border border-[var(--color-muted)] text-center group hover:bg-[var(--color-primary)] hover:text-white transition-colors duration-300">
-                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 dark:bg-[var(--color-card)]/20 group-hover:text-white transition-colors">
                   <BookHeart size={24} />
                 </div>
                 <h3 className="font-semibold text-[var(--color-foreground)] group-hover:text-white">High-Risk Pregnancy</h3>
               </div>
               
               <div className="bg-[var(--color-card)] p-6 rounded-2xl shadow-sm border border-[var(--color-muted)] text-center group hover:bg-[var(--color-primary)] hover:text-white transition-colors duration-300">
-                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 dark:bg-[var(--color-card)]/20 group-hover:text-white transition-colors">
                   <BookHeart size={24} />
                 </div>
                 <h3 className="font-semibold text-[var(--color-foreground)] group-hover:text-white">Infertility Management</h3>
               </div>
               
               <div className="bg-[var(--color-card)] p-6 rounded-2xl shadow-sm border border-[var(--color-muted)] text-center group hover:bg-[var(--color-primary)] hover:text-white transition-colors duration-300">
-                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 dark:bg-[var(--color-card)]/20 group-hover:text-white transition-colors">
                   <BookHeart size={24} />
                 </div>
                 <h3 className="font-semibold text-[var(--color-foreground)] group-hover:text-white">Minimal Access Surgery</h3>
               </div>
               
               <div className="bg-[var(--color-card)] p-6 rounded-2xl shadow-sm border border-[var(--color-muted)] text-center group hover:bg-[var(--color-primary)] hover:text-white transition-colors duration-300">
-                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 dark:bg-[var(--color-card)]/20 group-hover:text-white transition-colors">
                   <BookHeart size={24} />
                 </div>
                 <h3 className="font-semibold text-[var(--color-foreground)] group-hover:text-white">Preventive Oncology</h3>
@@ -111,7 +111,7 @@ export default function AwardsPage() {
               <p className="text-[var(--color-muted-foreground)] mb-4 leading-relaxed">
                 A comprehensive study analyzing the challenges and outcomes of high-risk pregnancies, proposing updated protocols for improved maternal care.
               </p>
-              <div className="text-sm font-medium text-gray-500">Published in: Journal of Obstetrics and Gynaecology India</div>
+              <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Published in: Journal of Obstetrics and Gynaecology India</div>
             </div>
             
             <div className="bg-white dark:bg-[var(--color-card)] p-8 rounded-2xl shadow-sm border border-[var(--color-muted)] hover:shadow-lg transition-all duration-300">
@@ -120,7 +120,7 @@ export default function AwardsPage() {
               <p className="text-[var(--color-muted-foreground)] mb-4 leading-relaxed">
                 Evaluating the post-operative recovery rates and complication reduction through laparoscopic approaches compared to traditional methods.
               </p>
-              <div className="text-sm font-medium text-gray-500">Presented at: AOGD Annual Conference</div>
+              <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Presented at: AOGD Annual Conference</div>
             </div>
           </div>
         </AnimateIn>

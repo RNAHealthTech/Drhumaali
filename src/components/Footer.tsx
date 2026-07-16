@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, ChevronRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-secondary)] text-white pt-20 pb-10 border-t-4 border-[var(--color-primary)]">
+    <footer className="bg-[var(--color-secondary)] dark:bg-slate-900 text-white pt-20 pb-10 border-t-4 border-[var(--color-primary)]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
@@ -104,7 +104,7 @@ export default function Footer() {
                   </p>
                 </div>
               </div>
-              <div className="bg-[var(--color-secondary-dark)] p-3 rounded-lg border border-[var(--color-secondary-light)] mt-2">
+              <div className="bg-[var(--color-secondary-dark)] dark:bg-slate-800 p-3 rounded-lg border border-[var(--color-secondary-light)] dark:border-slate-700 mt-2">
                 <p className="text-xs text-gray-300 mb-1">OPD Timings</p>
                 <p className="font-medium text-white">Tues/Thurs/Sat | 8:00 AM - 10:00 AM</p>
               </div>
@@ -113,22 +113,22 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[var(--color-secondary-light)] gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[var(--color-secondary-light)] dark:border-slate-700 gap-4">
           <p className="text-sm text-gray-300 text-center md:text-left">
             Copyright &copy; {new Date().getFullYear()} | All rights reserved with Dr. Huma Ali.
           </p>
           <div className="flex items-center gap-2">
             <span className="text-sm text-gray-300 mr-2">Follow Us:</span>
-            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
+            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] dark:bg-slate-800 flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
               FB
             </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
+            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] dark:bg-slate-800 flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
               X
             </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
+            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] dark:bg-slate-800 flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
               IG
             </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
+            <a href="#" className="w-9 h-9 rounded-full bg-[var(--color-secondary-dark)] dark:bg-slate-800 flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition-colors text-xs font-bold">
               IN
             </a>
           </div>

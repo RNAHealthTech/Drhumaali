@@ -92,7 +92,7 @@ export default function GalleryPage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {category.images.map((image, imageIdx) => (
                   <AnimateIn key={imageIdx} direction="up" delay={imageIdx * 0.1}>
-                    <div className="group relative rounded-3xl overflow-hidden aspect-[4/3] shadow-sm hover:shadow-xl transition-all duration-500 bg-gray-100">
+                    <div className="group relative rounded-3xl overflow-hidden aspect-[4/3] shadow-sm hover:shadow-xl transition-all duration-500 bg-gray-100 dark:bg-slate-800">
                       <img 
                         src={image.src} 
                         alt={image.alt} 

@@ -170,7 +170,7 @@ export default function ContactPage() {
                 
                 <button 
                   type="button"
-                  className="w-full flex items-center justify-center gap-2 bg-[var(--color-secondary)] hover:bg-[var(--color-secondary-dark)] text-white px-6 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-[var(--color-secondary)]/30 mt-2"
+                  className="w-full flex items-center justify-center gap-2 bg-[var(--color-secondary)] dark:bg-slate-800 hover:bg-[var(--color-secondary-dark)] dark:hover:bg-slate-700 text-white px-6 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-[var(--color-secondary)]/30 mt-2"
                 >
                   <Send size={18} />
                   Request Appointment

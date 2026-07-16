@@ -76,7 +76,7 @@ export default function AboutPage() {
           {/* Sidebar */}
           <AnimateIn direction="right" className="space-y-8">
             <div className="bg-[var(--color-primary)] text-white rounded-2xl p-8 shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-bl-full -mr-10 -mt-10"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 dark:bg-[var(--color-card)]/10 rounded-bl-full -mr-10 -mt-10"></div>
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <Hospital />
                 Current Role
@@ -109,7 +109,7 @@ export default function AboutPage() {
         {/* Doctor's Philosophy */}
         <AnimateIn direction="up" className="max-w-4xl mx-auto mt-20">
           <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 dark:bg-[var(--color-card)]/10 rounded-full blur-2xl"></div>
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-[var(--color-accent)]/20 rounded-full blur-2xl"></div>
             
             <Heart className="w-12 h-12 text-[var(--color-accent)] mb-6 relative z-10" />
@@ -131,7 +131,7 @@ export default function AboutPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[var(--color-foreground)]">Expertise in Central Delhi's Premier Healthcare Institution</h2>
           </div>
-          <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-[var(--color-muted)] text-lg text-[var(--color-muted-foreground)] leading-relaxed space-y-6">
+          <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl p-8 md:p-10 shadow-sm border border-[var(--color-muted)] text-lg text-[var(--color-muted-foreground)] leading-relaxed space-y-6">
             <p>
               As an integral part of the Institute of Obstetrics & Gynaecology at SGRH, Dr. Huma Ali contributes to a legacy of excellence in women's healthcare. Her expertise spans a wide range of services, including high-risk pregnancy management, infertility treatments (IVF), minimally invasive gynaecological surgeries (laparoscopy), and comprehensive care for adolescent and menopausal women. Her presence at SGRH ensures that patients in Central Delhi and beyond have access to world-class gynaecological and obstetric care.
             </p>
@@ -156,7 +156,7 @@ export default function AboutPage() {
               <div className="md:w-[45%] md:text-right md:pr-10">
                 <h3 className="text-xl font-bold text-[var(--color-foreground)]">Associate Consultant</h3>
                 <p className="text-[var(--color-primary)] font-medium">Sir Ganga Ram Hospital, New Delhi</p>
-                <p className="text-gray-600 mt-2">Currently serving as a specialist, handling high-risk obstetrics and complex gynaecological surgeries.</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2">Currently serving as a specialist, handling high-risk obstetrics and complex gynaecological surgeries.</p>
               </div>
               <div className="absolute left-[-9px] top-1 md:relative md:left-auto md:top-auto w-4 h-4 rounded-full bg-[var(--color-primary)] border-4 border-white shadow-sm md:mx-auto md:w-5 md:h-5 z-10 group-hover:scale-125 transition-transform"></div>
               <div className="md:w-[45%] md:pl-10 hidden md:block">
@@ -172,14 +172,14 @@ export default function AboutPage() {
               <div className="md:w-[45%] md:pl-10">
                 <h3 className="text-xl font-bold text-[var(--color-foreground)]">DNB Resident</h3>
                 <p className="text-[var(--color-primary)] font-medium">Sir Ganga Ram Hospital, New Delhi</p>
-                <p className="text-gray-600 mt-2">Completed rigorous residency training at one of India's premier medical institutions.</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2">Completed rigorous residency training at one of India's premier medical institutions.</p>
               </div>
               <div className="absolute left-[-9px] top-1 md:relative md:left-auto md:top-auto w-4 h-4 rounded-full bg-[var(--color-primary)] border-4 border-white shadow-sm md:mx-auto md:w-5 md:h-5 z-10 group-hover:scale-125 transition-transform"></div>
               <div className="md:w-[45%] md:text-right md:pr-10 hidden md:block">
-                <span className="inline-block px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 font-bold text-sm">2021</span>
+                <span className="inline-block px-4 py-1.5 rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 font-bold text-sm">2021</span>
               </div>
               <div className="md:hidden mt-2">
-                <span className="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-700 font-bold text-xs">2021</span>
+                <span className="inline-block px-3 py-1 rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 font-bold text-xs">2021</span>
               </div>
             </div>
 
@@ -188,14 +188,14 @@ export default function AboutPage() {
               <div className="md:w-[45%] md:text-right md:pr-10">
                 <h3 className="text-xl font-bold text-[var(--color-foreground)]">DGO</h3>
                 <p className="text-[var(--color-primary)] font-medium">Vydehi Institute of Medical Science, Bangalore</p>
-                <p className="text-gray-600 mt-2">Specialized in Obstetrics & Gynaecology, building a strong foundation in patient care.</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2">Specialized in Obstetrics & Gynaecology, building a strong foundation in patient care.</p>
               </div>
               <div className="absolute left-[-9px] top-1 md:relative md:left-auto md:top-auto w-4 h-4 rounded-full bg-[var(--color-primary)] border-4 border-white shadow-sm md:mx-auto md:w-5 md:h-5 z-10 group-hover:scale-125 transition-transform"></div>
               <div className="md:w-[45%] md:pl-10 hidden md:block">
-                <span className="inline-block px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 font-bold text-sm">2016</span>
+                <span className="inline-block px-4 py-1.5 rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 font-bold text-sm">2016</span>
               </div>
               <div className="md:hidden mt-2">
-                <span className="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-700 font-bold text-xs">2016</span>
+                <span className="inline-block px-3 py-1 rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 font-bold text-xs">2016</span>
               </div>
             </div>
           </div>

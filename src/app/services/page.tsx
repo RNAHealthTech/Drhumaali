@@ -142,7 +142,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {obstetricsServices.map((service, index) => (
               <AnimateIn key={index} direction="up" delay={index * 0.1}>
-                <div className="bg-white rounded-2xl p-8 shadow-sm border border-[var(--color-muted)] hover:shadow-xl hover:border-[var(--color-primary-light)] transition-all duration-300 h-full group flex flex-col items-center text-center">
+                <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl p-8 shadow-sm border border-[var(--color-muted)] hover:shadow-xl hover:border-[var(--color-primary-light)] transition-all duration-300 h-full group flex flex-col items-center text-center">
                   <div className="w-16 h-16 bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
@@ -164,7 +164,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {gynaecologyServices.map((service, index) => (
               <AnimateIn key={index} direction="up" delay={index * 0.1}>
-                <div className="bg-white rounded-2xl p-8 shadow-sm border border-[var(--color-muted)] hover:shadow-xl hover:border-[var(--color-primary-light)] transition-all duration-300 h-full group flex flex-col items-center text-center">
+                <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl p-8 shadow-sm border border-[var(--color-muted)] hover:shadow-xl hover:border-[var(--color-primary-light)] transition-all duration-300 h-full group flex flex-col items-center text-center">
                   <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
@@ -178,13 +178,13 @@ export default function ServicesPage() {
 
         {/* CTA */}
         <AnimateIn direction="up" className="max-w-4xl mx-auto text-center bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] rounded-3xl p-12 text-white shadow-xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 dark:bg-[var(--color-card)]/10 rounded-full blur-3xl"></div>
           <div className="relative z-10">
             <h2 className="text-3xl font-bold mb-6">Ready to prioritize your health?</h2>
             <p className="text-lg mb-8 text-white/90">
               At Dr. Huma Ali's clinic at SGRH, we are dedicated to providing exceptional care that prioritizes your health and well-being.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center bg-white text-[var(--color-primary)] font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+            <Link href="/contact" className="inline-flex items-center justify-center bg-white dark:bg-[var(--color-card)] text-[var(--color-primary)] font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
               Schedule a Consultation
             </Link>
           </div>

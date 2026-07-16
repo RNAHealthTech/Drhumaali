@@ -73,7 +73,7 @@ export default function BlogsPage() {
           {blogCategories.map((category, idx) => (
             <div key={idx} className="max-w-6xl mx-auto">
               <AnimateIn direction="up" className="flex items-center gap-3 mb-10 border-b border-[var(--color-muted)] pb-4">
-                <div className="w-10 h-10 bg-white shadow-sm border border-[var(--color-muted)] text-[var(--color-primary)] rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 bg-white dark:bg-[var(--color-card)] shadow-sm border border-[var(--color-muted)] text-[var(--color-primary)] rounded-xl flex items-center justify-center">
                   {category.icon}
                 </div>
                 <h2 className="text-3xl font-bold text-[var(--color-foreground)]">{category.title}</h2>
@@ -82,14 +82,14 @@ export default function BlogsPage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {category.articles.map((article, articleIdx) => (
                   <AnimateIn key={articleIdx} direction="up" delay={articleIdx * 0.1}>
-                    <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[var(--color-muted)] group h-full flex flex-col">
+                    <div className="bg-white dark:bg-[var(--color-card)] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[var(--color-muted)] group h-full flex flex-col">
                       <div className="h-56 overflow-hidden relative">
                         <img 
                           src={article.image} 
                           alt={article.title} 
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                         />
-                        <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)] shadow-sm">
+                        <div className="absolute top-4 left-4 bg-white/90 dark:bg-[var(--color-card)]/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary)] shadow-sm">
                           {category.title}
                         </div>
                       </div>

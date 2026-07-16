@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     <>
       {/* Top Header Bar */}
-      <div className="bg-[var(--color-secondary)] text-white text-xs md:text-sm py-2">
+      <div className="bg-[var(--color-secondary)] dark:bg-slate-900 text-white text-xs md:text-sm py-2">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
             <a href="tel:+911142254000" className="flex items-center gap-2 hover:text-[var(--color-primary-light)] transition-colors">
@@ -56,8 +56,8 @@ export default function Navbar() {
       <header
         className={`sticky top-0 w-full z-50 transition-all duration-500 border-b ${
           scrolled 
-            ? "py-3 bg-white/85 backdrop-blur-md border-gray-200/50 shadow-sm" 
-            : "py-4 md:py-5 bg-white border-transparent"
+            ? "py-3 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border-gray-200/50 dark:border-slate-800 shadow-sm"
+            : "py-4 md:py-5 bg-white dark:bg-slate-900 border-transparent"
         }`}
       >
         <div className="container mx-auto px-4 md:px-6">
@@ -86,7 +86,7 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     className={`text-[15px] font-semibold transition-colors hover:text-[var(--color-primary)] relative py-2 ${
-                      isActive ? "text-[var(--color-primary)]" : "text-gray-700"
+                      isActive ? "text-[var(--color-primary)]" : "text-gray-700 dark:text-gray-200"
                     }`}
                   >
                     {link.name}
@@ -111,7 +111,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Toggle */}
             <button
-              className="lg:hidden text-[var(--color-foreground)] p-2 hover:bg-gray-100 rounded-md transition-colors"
+              className="lg:hidden text-[var(--color-foreground)] p-2 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-md transition-colors"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X size={26} /> : <Menu size={26} />}
@@ -126,7 +126,7 @@ export default function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg lg:hidden overflow-hidden"
+              className="absolute top-full left-0 w-full bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 shadow-lg lg:hidden overflow-hidden"
             >
               <div className="flex flex-col px-4 py-6 gap-2">
                 {navLinks.map((link) => {
@@ -138,8 +138,8 @@ export default function Navbar() {
                       onClick={() => setIsOpen(false)}
                       className={`text-lg font-medium px-4 py-3 rounded-lg transition-colors ${
                         isActive
-                          ? "bg-[var(--color-primary-light)] text-[var(--color-primary-dark)]"
-                          : "text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)]"
+                          ? "bg-[var(--color-primary-light)] text-[var(--color-primary-dark)] dark:bg-[var(--color-primary)]/20 dark:text-[var(--color-primary-light)]"
+                          : "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-800 hover:text-[var(--color-primary)]"
                       }`}
                     >
                       {link.name}
@@ -147,8 +147,8 @@ export default function Navbar() {
                   );
                 })}
                 
-                <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-4">
-                  <div className="flex flex-col gap-2 px-4 text-sm text-gray-600">
+                <div className="mt-4 pt-4 border-t border-gray-100 dark:border-slate-800 flex flex-col gap-4">
+                  <div className="flex flex-col gap-2 px-4 text-sm text-gray-600 dark:text-gray-300">
                     <a href="tel:+911142254000" className="flex items-center gap-3">
                       <Phone size={18} className="text-[var(--color-primary)]" />
                       +91 11-42254000
