@@ -13,7 +13,7 @@ export default function GalleryPage() {
       title: "Dr. Huma Ali's Professional Portraits",
       icon: <Users className="w-6 h-6" />,
       images: [
-        { src: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop", alt: "Dr. Huma Ali Professional Portrait" },
+        { src: "https://sgrh.com/assets/img/profile/gab2780.png", alt: "Dr. Huma Ali Professional Portrait" },
         { src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop", alt: "In-Consultation" },
         { src: "https://images.unsplash.com/photo-1582750433449-648ed127d09e?q=80&w=800&auto=format&fit=crop", alt: "Speaking Engagements" }
       ]
@@ -63,7 +63,7 @@ export default function GalleryPage() {
             State-of-the-Art Facilities at Sir Ganga Ram Hospital
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)] leading-relaxed">
-            Welcome to our gallery. This section offers a visual representation of our commitment to women's health. We aim to provide a comforting and informative visual experience, showcasing the professional environment and compassionate care you can expect.
+            Welcome to the gallery of Dr. Huma Ali, where we offer a visual representation of our commitment to women's health and the state-of-the-art facilities at Sir Ganga Ram Hospital (SGRH) in Central Delhi. This section is designed to provide patients with a comforting and informative visual experience, showcasing the professional environment and compassionate care they can expect.
           </p>
         </AnimateIn>
 

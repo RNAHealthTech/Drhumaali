@@ -44,12 +44,16 @@ export default function BlogsPage() {
             Empowering You Through Knowledge
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)] leading-relaxed mb-6">
-            Welcome to the official blog of Dr. Huma Ali, your trusted Gynaecologist and Obstetrician at Sir Ganga Ram Hospital (SGRH) in Central Delhi. This space is dedicated to providing valuable, easy-to-understand, and evidence-based information on women's health, gynaecology, obstetrics, and overall well-being.
+            Welcome to the official blog of Dr. Huma Ali, your trusted Gynaecologist and Obstetrician at Sir Ganga Ram Hospital (SGRH) in Central Delhi. This space is dedicated to providing valuable, easy-to-understand, and evidence-based information on women's health, gynaecology, obstetrics, and overall well-being. Our goal is to empower you with knowledge, address common concerns, and keep you informed about the latest advancements in women's healthcare.
+          </p>
+          <p className="text-lg text-[var(--color-muted-foreground)] leading-relaxed mb-8">
+            <strong>Why Our Blog?</strong> In an era of abundant information, finding reliable and accurate health advice can be challenging. Dr. Huma Ali's blog aims to be a credible resource, offering insights directly from an experienced medical professional. Here, you will find articles designed to:
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm font-medium text-[var(--color-primary)]">
             <span className="bg-[var(--color-primary-light)] px-4 py-2 rounded-full flex items-center gap-2"><BookOpen size={16}/> Educate & Inform</span>
             <span className="bg-[var(--color-primary-light)] px-4 py-2 rounded-full flex items-center gap-2"><BookOpen size={16}/> Promote Awareness</span>
             <span className="bg-[var(--color-primary-light)] px-4 py-2 rounded-full flex items-center gap-2"><BookOpen size={16}/> Support Your Journey</span>
+            <span className="bg-[var(--color-primary-light)] px-4 py-2 rounded-full flex items-center gap-2"><BookOpen size={16}/> Address Local and Global Concerns</span>
           </div>
         </AnimateIn>
 

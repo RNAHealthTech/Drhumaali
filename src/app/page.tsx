@@ -29,14 +29,14 @@ export default function Home() {
               
               <AnimateIn direction="up" delay={0.2}>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] text-[var(--color-foreground)] tracking-tight">
-                  Empowering <br/>
-                  <span className="font-light italic text-[var(--color-primary)]">Women's Health</span>
+                  Empowering Women's Health <br/>
+                  <span className="font-light italic text-[var(--color-primary)] text-3xl md:text-5xl lg:text-6xl">with Compassion and Expertise</span>
                 </h1>
               </AnimateIn>
               
               <AnimateIn direction="up" delay={0.3}>
                 <p className="text-lg md:text-xl text-[var(--color-muted-foreground)] leading-relaxed max-w-xl font-medium">
-                  Welcome to the official website of Dr. Huma Ali, a distinguished Obstetrician and Gynaecologist at the prestigious Sir Ganga Ram Hospital (SGRH) in Central Delhi. With a profound commitment to women's health and well-being, Dr. Ali offers comprehensive and compassionate care.
+                  Welcome to the official website of Dr. Huma Ali, a distinguished Obstetrician and Gynaecologist at the prestigious Sir Ganga Ram Hospital (SGRH) in Central Delhi. With a profound commitment to women's health and well-being, Dr. Ali offers comprehensive and compassionate care across all stages of a woman's life, from adolescence through reproductive years to menopause.
                 </p>
               </AnimateIn>
               
@@ -129,10 +129,10 @@ export default function Home() {
             </AnimateIn>
             <AnimateIn direction="up" delay={0.2}>
               <p className="text-[var(--color-muted-foreground)] text-lg leading-relaxed mb-4">
-                Dr. Huma Ali is an integral part of the renowned Institute of Obstetrics & Gynaecology at SGRH, a center of excellence established in 1954. Her practice is built upon a foundation of advanced medical knowledge, precision, and a patient-centric approach.
+                Dr. Huma Ali is an integral part of the renowned Institute of Obstetrics & Gynaecology at SGRH, a center of excellence established in 1954. Her practice is built upon a foundation of advanced medical knowledge, precision, and a patient-centric approach, ensuring every woman receives personalized and effective treatment. Located conveniently in Central Delhi, Dr. Ali's clinic provides accessible, world-class healthcare to both local and international patients.
               </p>
               <p className="text-[var(--color-muted-foreground)] text-lg leading-relaxed mb-8">
-                Whether you are seeking routine gynaecological check-ups, specialized obstetric care, or advanced treatments for complex conditions, Dr. Ali is here to guide you with empathy and expertise. Located conveniently in Central Delhi, her clinic provides accessible, world-class healthcare.
+                At Dr. Huma Ali's practice, we understand the unique health challenges women face. We are dedicated to providing a supportive and confidential environment where your concerns are heard, and your health goals are met with the highest standards of medical care. Whether you are seeking routine gynaecological check-ups, specialized obstetric care, or advanced treatments for complex conditions, Dr. Ali is here to guide you with empathy and expertise.
               </p>
               <div className="max-w-2xl mx-auto italic text-[var(--color-secondary)] font-medium text-xl border-l-4 border-[var(--color-primary)] pl-6 text-left py-2">
                 "In the journey of womanhood, every step deserves expert care and unwavering support. My mission is to empower you with health, knowledge, and confidence."
@@ -236,7 +236,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[var(--color-secondary)] text-xl mb-1">Expert Care</h4>
-                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Highly qualified and experienced Gynaecologist and Obstetrician with MBBS, DGO, and DNB qualifications.</p>
+                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Dr. Huma Ali is a highly qualified and experienced Gynaecologist and Obstetrician with MBBS, DGO, and DNB qualifications, ensuring top-tier medical services.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-5">
@@ -245,7 +245,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[var(--color-secondary)] text-xl mb-1">Comprehensive Services</h4>
-                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">From high-risk pregnancy management and IVF to gynaecological endoscopy and adolescent gynaecology.</p>
+                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">From high-risk pregnancy management and IVF & reproductive medicine to gynaecological endoscopy and adolescent gynaecology, a full spectrum of services is available.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-5">
@@ -254,7 +254,25 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[var(--color-secondary)] text-xl mb-1">State-of-the-Art Facilities</h4>
-                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Practicing at SGRH, providing cutting-edge medical technology and a patient-centric approach.</p>
+                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Practicing at Sir Ganga Ram Hospital, patients have access to cutting-edge medical technology and advanced facilities.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-2xl bg-[var(--color-primary-light)]/50 flex items-center justify-center text-[var(--color-primary)] shrink-0 border border-[var(--color-primary-light)] shadow-sm">
+                      <HeartPulse size={24} strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-[var(--color-secondary)] text-xl mb-1">Patient-Centric Approach</h4>
+                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Dr. Ali is known for her compassionate care, clear communication, and dedication to empowering her patients.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-2xl bg-[var(--color-primary-light)]/50 flex items-center justify-center text-[var(--color-primary)] shrink-0 border border-[var(--color-primary-light)] shadow-sm">
+                      <Hospital size={24} strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-[var(--color-secondary)] text-xl mb-1">Convenient Location</h4>
+                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Situated in Central Delhi, the clinic is easily accessible for patients seeking the best gynaecological care in Delhi.</p>
                     </div>
                   </li>
                 </ul>

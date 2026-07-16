@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             
             <div className="flex items-center gap-6 pt-6 border-t border-gray-200">
               <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden border-2 border-white shadow-md">
-                 <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop" alt="Dr. Huma Ali" className="w-full h-full object-cover" />
+                 <img src="https://sgrh.com/assets/img/profile/gab2780.png" alt="Dr. Huma Ali" className="w-full h-full object-cover object-top bg-gray-100" />
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-lg">Dr. Huma Ali</p>
@@ -227,7 +227,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {/* Author Bio Box */}
               <div className="mt-12 p-8 bg-white rounded-3xl shadow-md border border-gray-100 flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
                 <div className="w-24 h-24 rounded-full overflow-hidden shrink-0 border-4 border-gray-50 shadow-inner">
-                  <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop" alt="Dr. Huma Ali" className="w-full h-full object-cover" />
+                  <img src="https://sgrh.com/assets/img/profile/gab2780.png" alt="Dr. Huma Ali" className="w-full h-full object-cover object-top bg-gray-100" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Written by Dr. Huma Ali</h4>

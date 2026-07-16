@@ -107,7 +107,7 @@ export default function ServicesPage() {
             Expert Care for Every Stage of a Woman's Life at Sir Ganga Ram Hospital
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)] leading-relaxed">
-            Dr. Huma Ali is dedicated to providing a full spectrum of specialized services designed to meet the unique health needs of women. Our practice combines advanced medical expertise with compassionate care, ensuring optimal health outcomes and a supportive patient experience.
+            Dr. Huma Ali, a leading Gynaecologist and Obstetrician at Sir Ganga Ram Hospital (SGRH) in Central Delhi, is dedicated to providing a full spectrum of specialized services designed to meet the unique health needs of women. Our practice combines advanced medical expertise with compassionate care, ensuring optimal health outcomes and a supportive patient experience. We are committed to offering world-class gynaecological and obstetric solutions to patients in Central Delhi and surrounding regions.
           </p>
         </AnimateIn>
 

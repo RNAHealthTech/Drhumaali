@@ -15,10 +15,13 @@ export default function ContactPage() {
         {/* Page Header */}
         <AnimateIn direction="up" className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[var(--color-foreground)]">
-            Contact <span className="text-[var(--color-secondary)]">Details</span>
+            Contact <span className="text-[var(--color-secondary)]">Dr. Huma Ali</span>
           </h1>
-          <p className="text-lg text-[var(--color-muted-foreground)]">
-            Reach out for consultations or book an appointment. See below for OPD timings and emergency contact numbers.
+          <h2 className="text-2xl font-medium text-[var(--color-secondary)] mb-4">
+            Connect with Expert Women's Healthcare at Sir Ganga Ram Hospital
+          </h2>
+          <p className="text-lg text-[var(--color-muted-foreground)] leading-relaxed">
+            We understand that seeking medical advice can be a personal journey, and we are here to provide you with compassionate and expert care. Whether you have a question, wish to schedule an appointment, or need to reach out for any other reason, Dr. Huma Ali and her team at Sir Ganga Ram Hospital (SGRH) in Central Delhi are ready to assist you.
           </p>
         </AnimateIn>
 
