@@ -16,7 +16,7 @@ export default function ContactPage() {
     "mainEntity": {
       "@type": "Physician",
       "name": "Dr. Huma Ali",
-      "telephone": "+91-1142254000",
+      "telephone": "+91-8920693881",
       "email": "info@drhumaali.com",
       "address": {
         "@type": "PostalAddress",
@@ -63,9 +63,9 @@ export default function ContactPage() {
                 <div className="w-12 h-12 rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary)] flex items-center justify-center mb-4">
                   <Phone size={24} />
                 </div>
-                <h3 className="font-bold text-lg mb-1 text-[var(--color-foreground)]">Call Us</h3>
-                <p className="text-[var(--color-muted-foreground)] mb-3">+91 11-42254000</p>
-                <a href="tel:+911142254000" className="text-[var(--color-primary)] font-medium hover:underline inline-flex items-center gap-1">
+                <h3 className="font-bold text-lg mb-1 text-[var(--color-foreground)]">Call Us for Appointment</h3>
+                <p className="text-[var(--color-muted-foreground)] mb-3">+91 8920693881</p>
+                <a href="tel:+918920693881" className="text-[var(--color-primary)] font-medium hover:underline inline-flex items-center gap-1">
                   Call Now &rarr;
                 </a>
               </div>
@@ -273,7 +273,7 @@ export default function ContactPage() {
                   </span>
                 </summary>
                 <p className="text-[var(--color-muted-foreground)] text-sm mt-3 leading-relaxed">
-                  You can reschedule by calling the hospital helpline (+91 11-42254000) at least 24 hours in advance so the slot can be given to another patient in need.
+                  You can reschedule by calling (+91 8920693881) at least 24 hours in advance so the slot can be given to another patient in need.
                 </p>
               </details>
               

@@ -30,8 +30,10 @@ export default function OPDTimings() {
               <Phone size={20} />
             </div>
             <div>
-              <h4 className="font-semibold text-[var(--color-foreground)] mb-1">Phone</h4>
-              <p className="text-[var(--color-muted-foreground)] text-sm">011-42254000</p>
+              <h4 className="font-semibold text-[var(--color-foreground)] mb-1">Phone / Appointment</h4>
+              <a href="tel:+918920693881" className="text-[var(--color-muted-foreground)] hover:text-[var(--color-primary)] transition-colors text-sm font-medium">
+                +91 8920693881
+              </a>
             </div>
           </div>
           

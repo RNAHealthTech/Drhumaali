@@ -35,9 +35,9 @@ export default function Navbar() {
       <div className="bg-[var(--color-secondary)] dark:bg-slate-900 text-white text-xs md:text-sm py-2">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-            <a href="tel:+911142254000" className="flex items-center gap-2 hover:text-[var(--color-primary-light)] transition-colors">
+            <a href="tel:+918920693881" className="flex items-center gap-2 hover:text-[var(--color-primary-light)] transition-colors">
               <Phone size={12} className="md:w-3.5 md:h-3.5" />
-              <span>+91 11-42254000</span>
+              <span>+91 8920693881</span>
             </a>
             <a href="mailto:contact@drhumaali.com" className="flex items-center gap-2 hover:text-[var(--color-primary-light)] transition-colors">
               <Mail size={12} className="md:w-3.5 md:h-3.5" />
@@ -149,9 +149,9 @@ export default function Navbar() {
                 
                 <div className="mt-4 pt-4 border-t border-gray-100 dark:border-slate-800 flex flex-col gap-4">
                   <div className="flex flex-col gap-2 px-4 text-sm text-gray-600 dark:text-gray-300">
-                    <a href="tel:+911142254000" className="flex items-center gap-3">
+                    <a href="tel:+918920693881" className="flex items-center gap-3">
                       <Phone size={18} className="text-[var(--color-primary)]" />
-                      +91 11-42254000
+                      +91 8920693881
                     </a>
                     <a href="mailto:contact@drhumaali.com" className="flex items-center gap-3">
                       <Mail size={18} className="text-[var(--color-primary)]" />

@@ -10,7 +10,7 @@ export default function Home() {
     "name": "Dr. Huma Ali",
     "image": "https://sgrh.com/assets/img/profile/gab2780.png",
     "description": "Expert Obstetrician & Gynaecologist at Sir Ganga Ram Hospital (SGRH), New Delhi.",
-    "telephone": "+91-1142254000",
+    "telephone": "+91-8920693881",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Sir Ganga Ram Hospital, Sir Ganga Ram Hospital Marg, Rajinder Nagar",
@@ -74,7 +74,7 @@ export default function Home() {
                   Book Consultation
                 </Link>
                 <a
-                  href="tel:+911142254000"
+                  href="tel:+918920693881"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent text-[var(--color-secondary)] hover:text-[var(--color-primary)] px-6 py-4 rounded-full font-semibold transition-all group"
                 >
                   <div className="w-10 h-10 rounded-full bg-white dark:bg-[var(--color-card)] flex items-center justify-center shadow-sm group-hover:shadow-md transition-all group-hover:scale-110">
