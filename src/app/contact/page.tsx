@@ -1,6 +1,7 @@
 import OPDTimings from "@/components/OPDTimings";
-import { Phone, Mail, MapPin, Ambulance, Send, HelpCircle, Car, Plus } from "lucide-react";
+import { Phone, Mail, MapPin, Ambulance, HelpCircle, Car, Plus } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
+import ContactForm from "./ContactForm";
 
 export const metadata = {
   title: "Contact | Dr. Huma Ali",
@@ -99,88 +100,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <AnimateIn direction="right" className="lg:col-span-1">
-            <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl p-8 shadow-xl border border-[var(--color-muted)] h-full">
-              <h2 className="text-2xl font-bold mb-6 text-[var(--color-foreground)]">Book Appointment</h2>
-              
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-[var(--color-foreground)] mb-1">Full Name</label>
-                  <input 
-                    type="text" 
-                    placeholder="John Doe"
-                    className="w-full px-4 py-3 rounded-lg border border-[var(--color-muted)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/50 focus:border-[var(--color-primary)] transition-colors"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-[var(--color-foreground)] mb-1">Email Address</label>
-                  <input 
-                    type="email" 
-                    placeholder="john@example.com"
-                    className="w-full px-4 py-3 rounded-lg border border-[var(--color-muted)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/50 focus:border-[var(--color-primary)] transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-[var(--color-foreground)] mb-1">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    placeholder="+91 98765 43210"
-                    className="w-full px-4 py-3 rounded-lg border border-[var(--color-muted)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/50 focus:border-[var(--color-primary)] transition-colors"
-                  />
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--color-foreground)] mb-1">Preferred Date</label>
-                    <input 
-                      type="date" 
-                      className="w-full px-4 py-3 rounded-lg border border-[var(--color-muted)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/50 focus:border-[var(--color-primary)] transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--color-foreground)] mb-1">Time Slot</label>
-                    <select className="w-full px-4 py-3 rounded-lg border border-[var(--color-muted)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/50 focus:border-[var(--color-primary)] transition-colors">
-                      <option value="">Select</option>
-                      <option value="morning">Morning</option>
-                      <option value="afternoon">Afternoon</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-[var(--color-foreground)] mb-1">Reason for Visit</label>
-                  <textarea 
-                    rows={3}
-                    placeholder="e.g., General Check-up, Pregnancy Consultation, PCOS Management, etc."
-                    className="w-full px-4 py-3 rounded-lg border border-[var(--color-muted)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/50 focus:border-[var(--color-primary)] transition-colors resize-none"
-                  ></textarea>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-[var(--color-foreground)] mb-1">How did you hear about us?</label>
-                  <select className="w-full px-4 py-3 rounded-lg border border-[var(--color-muted)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/50 focus:border-[var(--color-primary)] transition-colors">
-                    <option value="">Select</option>
-                    <option value="search_engine">Search Engine</option>
-                    <option value="referral">Referral</option>
-                    <option value="social_media">Social Media</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                
-                <button 
-                  type="button"
-                  className="w-full flex items-center justify-center gap-2 bg-[var(--color-secondary)] dark:bg-slate-800 hover:bg-[var(--color-secondary-dark)] dark:hover:bg-slate-700 text-white px-6 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-[var(--color-secondary)]/30 mt-2"
-                >
-                  <Send size={18} />
-                  Request Appointment
-                </button>
-                
-                <p className="text-xs text-center text-[var(--color-muted-foreground)] mt-4">
-                  This form is for requesting an appointment. Our team will contact you to confirm the date and time.
-                </p>
-              </form>
-            </div>
+            <ContactForm />
           </AnimateIn>
         </div>
 
