@@ -9,6 +9,7 @@ export default function Home() {
     "@type": "Physician",
     "name": "Dr. Huma Ali",
     "image": "https://sgrh.com/assets/img/profile/gab2780.png",
+    "url": "https://drhumaligynae.com",
     "description": "Expert Obstetrician & Gynaecologist at Sir Ganga Ram Hospital (SGRH), New Delhi.",
     "telephone": "+91-8920693881",
     "address": {
@@ -106,8 +107,8 @@ export default function Home() {
                     <Award size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-[var(--color-secondary)] text-lg leading-none">Top Rated</div>
-                    <div className="text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-widest mt-1">Specialist</div>
+                    <div className="font-bold text-[var(--color-secondary)] text-lg leading-none">Associate Consultant</div>
+                    <div className="text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-widest mt-1">Obstetrics & Gynaecology</div>
                   </div>
                 </AnimateIn>
               </AnimateIn>
@@ -122,21 +123,21 @@ export default function Home() {
           <div className="bg-white/70 dark:bg-[var(--color-card)]/70 backdrop-blur-2xl rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-white p-2">
             <div className="bg-white dark:bg-[var(--color-card)] rounded-2xl p-8 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-100">
               <div className="text-center px-4">
-                <div className="text-4xl md:text-5xl font-light text-[var(--color-secondary)] mb-2 tracking-tight">15<span className="text-[var(--color-primary)]">+</span></div>
+                <div className="text-4xl md:text-5xl font-light text-[var(--color-secondary)] mb-2 tracking-tight">10<span className="text-[var(--color-primary)]">+</span></div>
                 <div className="text-[var(--color-muted-foreground)] font-semibold text-sm uppercase tracking-wider mb-1">Years Experience</div>
-                <div className="text-gray-400 text-sm">Trusted care across ages</div>
+                <div className="text-gray-400 text-sm">Dedicated clinical care</div>
               </div>
               <div className="text-center px-4 pt-8 md:pt-0">
-                <div className="text-4xl md:text-5xl font-light text-[var(--color-secondary)] mb-2 tracking-tight">5k<span className="text-[var(--color-primary)]">+</span></div>
-                <div className="text-[var(--color-muted-foreground)] font-semibold text-sm uppercase tracking-wider mb-1">Happy Patients</div>
-                <div className="text-gray-400 text-sm">Real journeys of healing</div>
+                <div className="text-4xl md:text-5xl font-light text-[var(--color-secondary)] mb-2 tracking-tight">SGRH</div>
+                <div className="text-[var(--color-muted-foreground)] font-semibold text-sm uppercase tracking-wider mb-1">Hospital Attachment</div>
+                <div className="text-gray-400 text-sm">Sir Ganga Ram Hospital</div>
               </div>
               <div className="text-center px-4 pt-8 md:pt-0 flex flex-col items-center">
                 <div className="text-4xl md:text-5xl font-light text-[var(--color-secondary)] mb-2 tracking-tight flex items-center justify-center gap-1">
-                  5.0<Award size={28} className="text-[var(--color-primary)] mb-2" />
+                  DNB<Award size={28} className="text-[var(--color-primary)] mb-2" />
                 </div>
-                <div className="text-[var(--color-muted-foreground)] font-semibold text-sm uppercase tracking-wider mb-1">Top Rated Care</div>
-                <div className="text-gray-400 text-sm">Compassionate expertise</div>
+                <div className="text-[var(--color-muted-foreground)] font-semibold text-sm uppercase tracking-wider mb-1">Board Certified</div>
+                <div className="text-gray-400 text-sm">Obstetrics & Gynaecology</div>
               </div>
             </div>
           </div>
@@ -158,7 +159,7 @@ export default function Home() {
                 Dr. Huma Ali is an integral part of the renowned Institute of Obstetrics & Gynaecology at SGRH, a center of excellence established in 1954. Her practice is built upon a foundation of advanced medical knowledge, precision, and a patient-centric approach, ensuring every woman receives personalized and effective treatment. Located conveniently in Central Delhi, Dr. Ali's clinic provides accessible, world-class healthcare to both local and international patients.
               </p>
               <p className="text-[var(--color-muted-foreground)] text-lg leading-relaxed mb-8">
-                At Dr. Huma Ali's practice, we understand the unique health challenges women face. We are dedicated to providing a supportive and confidential environment where your concerns are heard, and your health goals are met with the highest standards of medical care. Whether you are seeking routine gynaecological check-ups, specialized obstetric care, or advanced treatments for complex conditions, Dr. Ali is here to guide you with empathy and expertise.
+                At Dr. Huma Ali's practice, we understand the unique health challenges women face. We are dedicated to providing a supportive and confidential environment where your concerns are heard, and your health goals are met with high standards of evidence-based medical care. Whether you are seeking routine gynaecological check-ups, specialized obstetric care, or clinical evaluations for complex conditions, Dr. Ali is here to guide you with empathy and expertise.
               </p>
               <div className="max-w-2xl mx-auto italic text-[var(--color-secondary)] font-medium text-xl border-l-4 border-[var(--color-primary)] pl-6 text-left py-2">
                 "In the journey of womanhood, every step deserves expert care and unwavering support. My mission is to empower you with health, knowledge, and confidence."
@@ -178,7 +179,7 @@ export default function Home() {
                 <ul className="space-y-4 text-[var(--color-muted-foreground)] mb-8 flex-1">
                   <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Normal delivery & High-risk pregnancy</li>
                   <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Personalized prenatal & postnatal care</li>
-                  <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Best maternity support in Delhi</li>
+                  <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Comprehensive maternity support in Delhi</li>
                 </ul>
                 <Link href="/contact" className="text-[var(--color-primary)] font-bold flex items-center gap-1 group-hover:gap-3 transition-all duration-300 mt-auto">
                   Learn More <ChevronRight size={18} />
@@ -196,7 +197,7 @@ export default function Home() {
                 <ul className="space-y-4 text-[var(--color-muted-foreground)] mb-8 flex-1">
                   <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Laparoscopic & Hysteroscopic Surgeries</li>
                   <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Treatment for urine leakage problems</li>
-                  <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Solutions for recurrent infections</li>
+                  <li className="flex items-start gap-3"><ShieldCheck size={20} className="text-[var(--color-primary)] shrink-0 mt-0.5" /> Evaluation and care for recurrent infections</li>
                 </ul>
                 <Link href="/contact" className="text-[var(--color-primary)] font-bold flex items-center gap-1 group-hover:gap-3 transition-all duration-300 mt-auto">
                   Learn More <ChevronRight size={18} />
@@ -262,7 +263,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[var(--color-secondary)] text-xl mb-1">Expert Care</h4>
-                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Dr. Huma Ali is a highly qualified and experienced Gynaecologist and Obstetrician with MBBS, DGO, and DNB qualifications, ensuring top-tier medical services.</p>
+                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Dr. Huma Ali is a qualified and experienced Gynaecologist and Obstetrician with MBBS, DGO, and DNB qualifications, dedicated to providing quality medical care.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-5">
@@ -298,7 +299,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[var(--color-secondary)] text-xl mb-1">Convenient Location</h4>
-                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Situated in Central Delhi, the clinic is easily accessible for patients seeking the best gynaecological care in Delhi.</p>
+                      <p className="text-[var(--color-muted-foreground)] leading-relaxed">Situated in Central Delhi, the clinic is easily accessible for patients seeking comprehensive gynaecological care in Delhi.</p>
                     </div>
                   </li>
                 </ul>
@@ -330,34 +331,52 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
             <AnimateIn direction="up">
-              <h2 className="text-sm font-bold text-[var(--color-primary)] uppercase tracking-widest mb-3">Patient Stories</h2>
-              <h3 className="text-3xl md:text-5xl font-light text-[var(--color-secondary)] mb-6 tracking-tight">Words of <span className="font-semibold">Trust</span></h3>
-              <p className="text-[var(--color-muted-foreground)] text-lg">Real experiences from women who trusted us with their journey.</p>
+              <h2 className="text-sm font-bold text-[var(--color-primary)] uppercase tracking-widest mb-3">Patient Care Standards</h2>
+              <h3 className="text-3xl md:text-5xl font-light text-[var(--color-secondary)] mb-6 tracking-tight">Principles of <span className="font-semibold">Care</span></h3>
+              <p className="text-[var(--color-muted-foreground)] text-lg">Our core commitments to compassionate, unhurried, and evidence-based consultations.</p>
             </AnimateIn>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-            {[1, 2, 3].map((item, index) => (
-              <AnimateIn key={item} direction="up" delay={index * 0.15} className={index === 1 ? "lg:mt-10" : ""}>
+            {[
+              {
+                quote: "Consultations are structured to be unhurried and attentive, ensuring patients have ample time to discuss symptoms, medical history, and clinical questions thoroughly.",
+                title: "Thorough Consultations",
+                subtitle: "Attentive Clinical Care",
+                badge: "TC"
+              },
+              {
+                quote: "Transparent and clear communication ensures that diagnosis, treatment options, and care pathways are explained clearly to empower informed decision-making.",
+                title: "Patient Empowerment",
+                subtitle: "Evidence-Based Guidance",
+                badge: "PE"
+              },
+              {
+                quote: "A supportive, respectful, and confidential environment is maintained at all times, prioritizing patient comfort and dignity across every stage of care.",
+                title: "Compassionate Care",
+                subtitle: "Respect & Confidentiality",
+                badge: "CC"
+              }
+            ].map((principle, index) => (
+              <AnimateIn key={principle.title} direction="up" delay={index * 0.15} className={index === 1 ? "lg:mt-10" : ""}>
                 <div className="bg-white dark:bg-[var(--color-card)] p-8 md:p-10 rounded-[2rem] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] border border-white relative h-full flex flex-col group hover:-translate-y-2 transition-transform duration-500">
                   <div className="w-12 h-12 bg-[var(--color-primary-light)] rounded-full flex items-center justify-center text-[var(--color-primary)] mb-6">
                     <Quote size={20} className="fill-current" />
                   </div>
-                  <div className="flex gap-1 mb-6 text-yellow-400">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Award key={star} size={16} className="fill-current text-[var(--color-primary)]" />
-                    ))}
+                  <div className="flex items-center gap-2 mb-6 text-sm font-semibold text-[var(--color-primary)]">
+                    <CheckCircle2 size={18} />
+                    <span>Clinical Standard</span>
                   </div>
                   <p className="text-[var(--color-secondary)] mb-8 font-medium leading-relaxed italic flex-1">
-                    "The visit with the doctor was quite satisfactory. Her friendly and warm approach puts you at comfort. She gives adequate time to the client and does not rush the appointment. I would highly recommend Dr. Huma Ali."
+                    "{principle.quote}"
                   </p>
                   <div className="flex items-center gap-4 mt-auto">
                     <div className="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-500 dark:text-gray-400 font-bold">
-                      HP
+                      {principle.badge}
                     </div>
                     <div>
-                      <div className="font-bold text-[var(--color-secondary)]">Happy Patient</div>
-                      <div className="text-xs text-[var(--color-muted-foreground)]">Verified Visit</div>
+                      <div className="font-bold text-[var(--color-secondary)]">{principle.title}</div>
+                      <div className="text-xs text-[var(--color-muted-foreground)]">{principle.subtitle}</div>
                     </div>
                   </div>
                 </div>
@@ -386,8 +405,8 @@ export default function Home() {
                 <CheckCircle2 size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Trusted & Certified</h3>
-                <p className="text-gray-600 dark:text-gray-400">Highest Standards of Medical Care</p>
+                <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Clinical Governance</h3>
+                <p className="text-gray-600 dark:text-gray-400">High Standards of Patient Care</p>
               </div>
             </div>
             <div className="hidden md:block w-px h-12 bg-gray-200"></div>

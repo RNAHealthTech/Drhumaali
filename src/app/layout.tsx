@@ -15,8 +15,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://drhumaligynae.com"),
   title: "Dr. Huma Ali | Obstetrics & Gynaecology | Sir Ganga Ram Hospital",
   description: "Dr. Huma Ali, a skilled Obstetrics & Gynaecology specialist at Sir Ganga Ram Hospital, offers expert care for women's health with compassion and precision.",
+  alternates: {
+    canonical: "https://drhumaligynae.com",
+  },
+  openGraph: {
+    title: "Dr. Huma Ali | Obstetrics & Gynaecology | Sir Ganga Ram Hospital",
+    description: "Dr. Huma Ali, a skilled Obstetrics & Gynaecology specialist at Sir Ganga Ram Hospital, offers expert care for women's health with compassion and precision.",
+    url: "https://drhumaligynae.com",
+    siteName: "Dr. Huma Ali",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

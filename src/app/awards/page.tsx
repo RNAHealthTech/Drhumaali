@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import { Trophy, HeartPulse, Sparkles, BookHeart, FileText, Presentation } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Awards & Interests | Dr. Huma Ali",
   description: "Learn about Dr. Huma Ali's awards, achievements, and medical interests.",
+  alternates: {
+    canonical: "https://drhumaligynae.com/awards",
+  },
 };
 
 export default function AwardsPage() {
@@ -17,7 +21,7 @@ export default function AwardsPage() {
             Awards & <span className="text-[var(--color-primary)]">Interests</span>
           </h1>
           <p className="text-lg text-[var(--color-muted-foreground)]">
-            Recognized for excellence in medical practice and deeply interested in advancing women's healthcare.
+            Dedicated to quality medical practice and actively committed to advancing women's healthcare.
           </p>
         </AnimateIn>
 

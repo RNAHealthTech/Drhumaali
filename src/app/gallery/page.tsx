@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import AnimateIn from "@/components/AnimateIn";
 import { Camera, Heart, Hospital, Users } from "lucide-react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Gallery | Dr. Huma Ali",
   description: "A Glimpse into Dr. Huma Ali's Practice and Sir Ganga Ram Hospital.",
+  alternates: {
+    canonical: "https://drhumaligynae.com/gallery",
+  },
 };
 
 export default function GalleryPage() {
@@ -11,6 +15,7 @@ export default function GalleryPage() {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
     "name": "Gallery | Dr. Huma Ali",
+    "url": "https://drhumaligynae.com/gallery",
     "description": "A Glimpse into Dr. Huma Ali's Practice and Sir Ganga Ram Hospital."
   };
 

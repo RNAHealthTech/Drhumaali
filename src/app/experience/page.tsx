@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import { Briefcase, Award, FileBadge, Activity, Target } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Experience | Dr. Huma Ali",
   description: "Explore Dr. Huma Ali's professional experience, positions held, and certifications.",
+  alternates: {
+    canonical: "https://drhumaligynae.com/experience",
+  },
 };
 
 export default function ExperiencePage() {
@@ -132,7 +136,7 @@ export default function ExperiencePage() {
             <div className="bg-white dark:bg-[var(--color-card)] p-6 rounded-2xl shadow-sm border border-[var(--color-muted)] hover:-translate-y-1 transition-transform">
               <h3 className="font-bold text-lg mb-2 text-[var(--color-foreground)]">Cervical Cerclage</h3>
               <p className="text-sm text-[var(--color-muted-foreground)] leading-relaxed">
-                Surgical procedure to prevent premature birth by placing a stitch around the cervix.
+                Surgical procedure designed to reduce the risk of premature birth by placing a stitch around the cervix.
               </p>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { blogs } from "@/data/blogs";
 import { notFound } from "next/navigation";
 import AnimateIn from "@/components/AnimateIn";
@@ -12,7 +13,7 @@ export function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const blog = blogs.find((b) => b.slug === slug);
   if (!blog) return { title: "Blog Not Found" };
@@ -20,6 +21,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${blog.title} | Dr. Huma Ali`,
     description: blog.excerpt,
     keywords: blog.keywords,
+    alternates: {
+      canonical: `https://drhumaligynae.com/blogs/${slug}`,
+    },
+    openGraph: {
+      title: `${blog.title} | Dr. Huma Ali`,
+      description: blog.excerpt,
+      url: `https://drhumaligynae.com/blogs/${slug}`,
+      type: "article",
+    },
   };
 }
 

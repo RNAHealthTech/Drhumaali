@@ -1,11 +1,15 @@
+import type { Metadata } from "next";
 import OPDTimings from "@/components/OPDTimings";
 import { Phone, Mail, MapPin, Ambulance, HelpCircle, Car, Plus } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
 import ContactForm from "./ContactForm";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Contact | Dr. Huma Ali",
   description: "Contact information, OPD timings, and emergency details for Dr. Huma Ali.",
+  alternates: {
+    canonical: "https://drhumaligynae.com/contact",
+  },
 };
 
 export default function ContactPage() {
@@ -13,10 +17,12 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Dr. Huma Ali",
+    "url": "https://drhumaligynae.com/contact",
     "description": "Contact information, OPD timings, and emergency details for Dr. Huma Ali.",
     "mainEntity": {
       "@type": "Physician",
       "name": "Dr. Huma Ali",
+      "url": "https://drhumaligynae.com",
       "telephone": "+91-8920693881",
       "email": "info@drhumaali.com",
       "address": {

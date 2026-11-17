@@ -1,11 +1,15 @@
+import type { Metadata } from "next";
 import AnimateIn from "@/components/AnimateIn";
 import { BookOpen, ChevronRight, Activity, Baby, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { blogs } from "@/data/blogs";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Health Insights & Blogs | Dr. Huma Ali",
   description: "Empowering you through knowledge on women's health, gynaecology, obstetrics, and overall well-being.",
+  alternates: {
+    canonical: "https://drhumaligynae.com/blogs",
+  },
 };
 
 export default function BlogsPage() {
@@ -13,6 +17,7 @@ export default function BlogsPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Health Insights & Blogs | Dr. Huma Ali",
+    "url": "https://drhumaligynae.com/blogs",
     "description": "Empowering you through knowledge on women's health, gynaecology, obstetrics, and overall well-being."
   };
 

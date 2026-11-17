@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import { GraduationCap, Languages, Hospital, Heart, History, Camera } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "About | Dr. Huma Ali",
   description: "Learn more about Dr. Huma Ali's education and background.",
+  alternates: {
+    canonical: "https://drhumaligynae.com/about",
+  },
 };
 
 export default function AboutPage() {

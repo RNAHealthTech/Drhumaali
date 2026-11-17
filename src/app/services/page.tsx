@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import { Baby, Activity, Beaker, ShieldPlus, HeartPulse, Sparkles, ActivitySquare, ShieldCheck, Search, Users, ShieldAlert, Heart, Syringe, PlusCircle, UserCheck } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Services | Dr. Huma Ali",
   description: "Comprehensive Gynaecology & Obstetrics Services at Sir Ganga Ram Hospital.",
+  alternates: {
+    canonical: "https://drhumaligynae.com/services",
+  },
 };
 
 export default function ServicesPage() {
@@ -12,6 +16,7 @@ export default function ServicesPage() {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Gynaecology & Obstetrics Services | Dr. Huma Ali",
+    "url": "https://drhumaligynae.com/services",
     "description": "Comprehensive Gynaecology & Obstetrics Services at Sir Ganga Ram Hospital.",
     "about": [
       {
@@ -48,7 +53,7 @@ export default function ServicesPage() {
     },
     {
       title: "Epidural Analgesia in Labour",
-      description: "Pain management options during childbirth to ensure a comfortable delivery experience.",
+      description: "Pain management options during childbirth to help manage discomfort and support patient comfort.",
       icon: <Syringe className="w-8 h-8" />
     },
     {
@@ -128,7 +133,7 @@ export default function ServicesPage() {
             Expert Care for Every Stage of a Woman's Life at Sir Ganga Ram Hospital
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)] leading-relaxed">
-            Dr. Huma Ali, a leading Gynaecologist and Obstetrician at Sir Ganga Ram Hospital (SGRH) in Central Delhi, is dedicated to providing a full spectrum of specialized services designed to meet the unique health needs of women. Our practice combines advanced medical expertise with compassionate care, ensuring optimal health outcomes and a supportive patient experience. We are committed to offering world-class gynaecological and obstetric solutions to patients in Central Delhi and surrounding regions.
+            Dr. Huma Ali, an Obstetrician and Gynaecologist at Sir Ganga Ram Hospital (SGRH) in Central Delhi, is dedicated to providing a comprehensive spectrum of specialized services designed to meet the unique health needs of women. Our practice combines advanced medical training with compassionate care, aiming for positive health outcomes and a supportive patient experience. We are committed to offering evidence-based gynaecological and obstetric care to patients in Central Delhi and surrounding regions.
           </p>
         </AnimateIn>
 
